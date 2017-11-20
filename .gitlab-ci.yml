@@ -1,0 +1,29 @@
+image: node
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  before_script:
+    - yarn --force
+  script:
+    - yarn test
+    - export HTTPS=false && yarn build
+    - tar -cf package.tar --exclude=./package.tar ./
+  artifacts:
+    name: "${CI_JOB_STAGE}_${CI_COMMIT_REF_NAME}"
+    expire_in: 20 minutes
+    paths:
+    - package.tar
+  only:
+    - master
+
+deploy:
+  stage: deploy
+  image: k-3soft/ansible
+  script:
+    - ansible-playbook -i /ansible/inventory/host-1.k-3soft.com /ansible/playbooks/deploy.yml -e "project_name=$CI_PROJECT_PATH src=$PWD env=dev"
+  only:
+    - master

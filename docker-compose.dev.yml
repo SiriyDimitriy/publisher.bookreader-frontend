@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    container_name: ${PROJECT_NAME}-dev-node
+    restart: always
+    environment:
+      VIRTUAL_HOST: publisher.k-3soft.com
+    networks:
+      - nginx-proxy
+networks:
+  nginx-proxy:
+    external:
+      name: serverservices_default

@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    image: node
+    container_name: ${PROJECT_NAME}-node
+    working_dir: /usr/src/app
+    expose:
+      - "3000"
+    entrypoint:
+      - "yarn"
+      - "prod"
+    volumes:
+      - "./:/usr/src/app"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>edit</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.300000012">
+        <g id="viewer" transform="translate(-1291.000000, -30.000000)" fill-rule="nonzero" fill="#4A4A4A">
+            <g id="edit" transform="translate(1291.000000, 30.000000)">
+                <path d="M18.9900176,4.51479229 C19.3914744,4.11815296 19.3914744,3.45708741 18.9900176,3.08078856 L16.5812767,0.700952595 C16.2004075,0.304313267 15.5313128,0.304313267 15.129856,0.700952595 L13.2358033,2.56210637 L17.095965,6.37594606 L18.9900176,4.51479229 Z M0.759760917,14.8986065 L0.759760917,18.7124462 L4.61992255,18.7124462 L16.0048259,7.45399141 L12.1446643,3.64015172 L0.759760917,14.8986065 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

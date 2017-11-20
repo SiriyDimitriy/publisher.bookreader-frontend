@@ -1,0 +1,8 @@
+{
+  "APP_API_USE_HTTPS": false,
+  "APP_API_DOMAIN": "api.bookreader.k-3soft.com",
+  "APP_API_PREFIX": "/api",
+  "APP_DEFAULT_LOCALE": "en",
+  "APP_NODE_LOCALES": [],
+  "APP_TEST_VAR": "test"
+}
